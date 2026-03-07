@@ -1,5 +1,5 @@
 // Helpers
-import { normalizeHalfSteps } from "../helpers/noteHelpers";
+import { normalizeHalfSteps } from "../helpers/noteHelpers.js";
 
 /**
  * Class representing a musical chord

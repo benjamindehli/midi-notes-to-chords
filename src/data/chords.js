@@ -1,4 +1,4 @@
-import Chord from "../classes/Chord";
+import Chord from "../classes/Chord.js";
 
 const chords = [
     new Chord({ halfSteps: [0], name: "" }),

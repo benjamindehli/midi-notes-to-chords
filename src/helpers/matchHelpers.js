@@ -1,9 +1,9 @@
 // Helpers
-import { getRelativeNoteNumber, normalizeHalfStep, normalizeHalfSteps } from "./noteHelpers";
+import { getRelativeNoteNumber, normalizeHalfStep, normalizeHalfSteps } from "./noteHelpers.js";
 
 // Data
-import chords from "../data/chords";
-import notes from "../data/notes";
+import chords from "../data/chords.js";
+import notes from "../data/notes.js";
 
 /**
  *

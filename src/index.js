@@ -1,1 +1,1 @@
-export { getChordsFromSelectedNotes } from "./helpers/matchHelpers";
+export { getChordsFromSelectedNotes } from "./helpers/matchHelpers.js";

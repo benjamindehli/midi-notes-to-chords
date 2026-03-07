@@ -1,5 +1,5 @@
 // Classes
-import Note from "../classes/Note";
+import Note from "../classes/Note.js";
 
 const notes = [
     new Note({ number: 0, name: "C" }),
