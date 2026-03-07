@@ -1299,6 +1299,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@benjamindehli/midi-notes-to-chords@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@benjamindehli/midi-notes-to-chords@workspace:."
+  dependencies:
+    "@babel/core": "npm:^7.29.0"
+    "@babel/preset-env": "npm:^7.29.0"
+    "@eslint/js": "npm:^10.0.1"
+    babel-jest: "npm:^30.2.0"
+    eslint: "npm:^10.0.3"
+    jest: "npm:^30.2.0"
+    jest-environment-jsdom: "npm:^30.2.0"
+    tsup: "npm:^8.5.1"
+    typescript: "npm:^5.9.3"
+  languageName: unknown
+  linkType: soft
+
 "@csstools/color-helpers@npm:^5.1.0":
   version: 5.1.0
   resolution: "@csstools/color-helpers@npm:5.1.0"
@@ -4759,22 +4775,6 @@ __metadata:
   checksum: 10c0/166fa6eb926b9553f32ef81f5f531d27b4ce7da60e5baf8c021d043b27a388fb95e46a8038d5045877881e673f8134122b59624d5cecbd16eb50a42e7a6b5ca8
   languageName: node
   linkType: hard
-
-"midi-notes-to-chords@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "midi-notes-to-chords@workspace:."
-  dependencies:
-    "@babel/core": "npm:^7.29.0"
-    "@babel/preset-env": "npm:^7.29.0"
-    "@eslint/js": "npm:^10.0.1"
-    babel-jest: "npm:^30.2.0"
-    eslint: "npm:^10.0.3"
-    jest: "npm:^30.2.0"
-    jest-environment-jsdom: "npm:^30.2.0"
-    tsup: "npm:^8.5.1"
-    typescript: "npm:^5.9.3"
-  languageName: unknown
-  linkType: soft
 
 "mimic-fn@npm:^2.1.0":
   version: 2.1.0
