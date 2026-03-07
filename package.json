@@ -1,5 +1,5 @@
 {
-    "version": "1.0.3",
+    "version": "1.0.4",
     "name": "@benjamindehli/midi-notes-to-chords",
     "type": "module",
     "main": "./dist/index.cjs",
