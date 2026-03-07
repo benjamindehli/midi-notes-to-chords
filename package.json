@@ -1,6 +1,9 @@
 {
     "version": "1.0.0",
-    "name": "midi-notes-to-chords",
+    "name": "@benjamindehli/midi-notes-to-chords",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/"
+    },
     "type": "module",
     "main": "./dist/index.cjs",
     "module": "./dist/index.js",
