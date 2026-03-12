@@ -57,7 +57,7 @@ function getMatchedChords(selectedNoteNumbers, matchedChords) {
         relativeSelectedNotes.sort((a, b) => a - b);
         const normalizedRelativeNotes = normalizeHalfSteps(relativeSelectedNotes);
         for (const chord of chords) {
-            const chordHalfSteps = chord.parsedHalfSteps;
+            const chordHalfSteps = chord.getParsedHalfSteps();
             if (isChordMatch(normalizedRelativeNotes, chordHalfSteps)) {
                 matchedChords.push({
                     root: rootNote.name,
