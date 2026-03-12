@@ -1,3 +1,4 @@
+// Classes
 import Chord from "../classes/Chord.js";
 
 const chords = [

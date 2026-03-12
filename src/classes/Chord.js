@@ -1,35 +1,26 @@
 // Helpers
-import { normalizeHalfSteps } from "../helpers/noteHelpers.js";
+import NoteSelection from "./NoteSelection.js";
 
 /**
- * Class representing a musical chord
+ * Class representing a musical chord, which is a type of note selection.
  * @class
- *
- * @property {string} name - The name of the chord
+ * @property {string} name - The name of the chord (e.g., "maj7", "m7", "dim", etc.)
  * @property {number[]} halfSteps - An array of half steps (0-11) that define the chord
- * @property {number[]} parsedHalfSteps - An array of normalized half steps (0-11) without duplicates, derived from halfSteps
+ * @property {string} type - The type of the note selection (e.g., "chord")
  * @param {Object} props - The properties to initialize the chord
  * @param {string} props.name - The name of the chord
  * @param {number[]} props.halfSteps - An array of half steps (0-11) that define the chord
  *
  * @example
- * const majorChord = new Chord({ name: "m11", halfSteps: [0, 3, 7, 10, 14, 17] });
- * console.log(majorChord.name); // "m11"
- * console.log(majorChord.halfSteps); // [0, 3, 7, 10, 14, 17]
- * console.log(majorChord.parsedHalfSteps); // [0, 2, 3, 5, 7, 10]
+ * const majorChord = new Chord({ name: "maj7", halfSteps: [0, 4, 7, 11] });
+ * console.log(majorChord.name); // "maj7"
+ * console.log(majorChord.halfSteps); // [0, 4, 7, 11]
+ * console.log(majorChord.type); // "chord"
+ * console.log(majorChord.getParsedHalfSteps(majorChord.halfSteps)); // [0, 2, 3, 5, 7, 10]
  */
-export default class Chord {
+export default class Chord extends NoteSelection {
     constructor(props) {
-        this.name = props?.name;
-        this.halfSteps = props?.halfSteps || [];
-        this.parsedHalfSteps = this.getParsedHalfSteps(this.halfSteps);
-    }
-
-    /**
-     * @param {number[]} halfSteps - An array of half steps (0-11)
-     * @returns {number[]} An array of normalized half steps (0-11) without duplicates
-     */
-    getParsedHalfSteps(halfSteps) {
-        return normalizeHalfSteps(halfSteps);
+        super(props);
+        this.type = this._getSelectionType("chord");
     }
 }
