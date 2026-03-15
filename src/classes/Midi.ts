@@ -1,4 +1,4 @@
-export type MidiMessageHandler = (event: any) => void;
+export type MidiMessageHandler = () => void;
 
 /**
  * Class representing MIDI access and handling MIDI messages.
