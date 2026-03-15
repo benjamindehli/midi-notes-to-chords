@@ -1,4 +1,4 @@
-import { getRelativeNoteNumber, normalizeHalfStep, normalizeHalfSteps } from "./noteHelpers.js";
+import { getRelativeNoteNumber, normalizeHalfStep, normalizeHalfSteps } from "./noteHelpers";
 
 describe("noteHelpers", () => {
     describe("getRelativeNoteNumber", () => {
