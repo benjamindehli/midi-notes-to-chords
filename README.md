@@ -1,4 +1,4 @@
-# midi-notes-to-chords
+# music-utils
 
 A utility for identifying chords from selected MIDI note numbers.
 
@@ -11,13 +11,13 @@ A utility for identifying chords from selected MIDI note numbers.
 ## Installation
 
 ```bash
-npm install midi-notes-to-chords
+npm install @benjamindehli/music-utils
 ```
 
 ## Usage
 
 ```js
-import { getChordsFromSelectedNotes } from "midi-notes-to-chords";
+import { getChordsFromSelectedNotes } from "@benjamindehli/music-utils";
 
 const midiNotes = [60, 64, 67]; // C, E, G
 const chords = getChordsFromSelectedNotes(midiNotes);
